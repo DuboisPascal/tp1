@@ -414,7 +414,7 @@ main h1 {
 }
 
 main h1.sujet1 {
-  color: purple;
+  color: olivedrab;
   -webkit-animation-name: animation1;
           animation-name: animation1;
   -webkit-animation-duration: 2s;
