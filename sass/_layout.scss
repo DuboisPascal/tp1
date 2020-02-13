@@ -63,6 +63,11 @@ main{
                 height: 100%;
                 scroll-snap-align: start;
                 scroll-behavior: smooth;
+                background-color: aquamarine;
+
+                p{
+                    margin: auto;
+                }
             }
         }
     }

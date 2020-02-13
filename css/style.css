@@ -469,5 +469,10 @@ main div.slide-wrap div.slider div.slide {
   height: 100%;
   scroll-snap-align: start;
   scroll-behavior: smooth;
+  background-color: aquamarine;
+}
+
+main div.slide-wrap div.slider div.slide p {
+  margin: auto;
 }
 /*# sourceMappingURL=style.css.map */
