@@ -341,6 +341,28 @@ template {
   display: none;
 }
 
+@-webkit-keyframes animation1 {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes animation1 {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+body {
+  width: 100%;
+}
+
 header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -375,5 +397,31 @@ ul li a {
 
 ul li a:hover {
   border: solid 2px red;
+}
+
+main {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main h1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+}
+
+main h1.sujet1 {
+  color: purple;
+  -webkit-animation-name: animation1;
+          animation-name: animation1;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
 }
 /*# sourceMappingURL=style.css.map */
