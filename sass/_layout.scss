@@ -45,9 +45,28 @@ main{
         &.sujet2{
             @extend .sujet1;
             border: burlywood solid 3px;
-            color: midnightblue;
+            color: white;
             animation-name: animation2;
         }
     }
+    div.slide-wrap{
+        div.slider{
+            width: 300px;
+            height: 300px;
+            display: flex;
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+            scroll-snap-type: x mandatory;  
+            div.slide{
+                width: 300px;
+                flex-shrink: 0;
+                height: 100%;
+                scroll-snap-align: start;
+                scroll-behavior: smooth;
+            }
+        }
+    }
 }
+
+
 
