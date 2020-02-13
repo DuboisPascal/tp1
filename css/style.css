@@ -359,6 +359,24 @@ template {
   }
 }
 
+@-webkit-keyframes animation2 {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes animation2 {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 body {
   width: 100%;
 }
@@ -413,7 +431,7 @@ main h1 {
   margin: auto;
 }
 
-main h1.sujet1 {
+main h1.sujet1, main h1.sujet2 {
   color: olivedrab;
   -webkit-animation-name: animation1;
           animation-name: animation1;
@@ -423,5 +441,12 @@ main h1.sujet1 {
           animation-direction: alternate;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
+}
+
+main h1.sujet2 {
+  border: orchid;
+  color: palegreen;
+  -webkit-animation-name: animation2;
+          animation-name: animation2;
 }
 /*# sourceMappingURL=style.css.map */
