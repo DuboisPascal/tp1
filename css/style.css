@@ -432,7 +432,7 @@ main h1 {
 }
 
 main h1.sujet1, main h1.sujet2 {
-  color: olivedrab;
+  color: crimson;
   -webkit-animation-name: animation1;
           animation-name: animation1;
   -webkit-animation-duration: 2s;
@@ -444,8 +444,8 @@ main h1.sujet1, main h1.sujet2 {
 }
 
 main h1.sujet2 {
-  border: orchid;
-  color: palegreen;
+  border: burlywood solid 3px;
+  color: midnightblue;
   -webkit-animation-name: animation2;
           animation-name: animation2;
 }
