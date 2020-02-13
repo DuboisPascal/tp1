@@ -1,0 +1,26 @@
+header{
+    display: flex;
+    align-content: space-between;
+}
+
+ul{
+    display: flex;
+    list-style-type: none;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    align-content: space-around;
+    li{
+        display: inline-block;
+        margin: auto;
+        
+        a{
+            border: solid 2px blue;
+            text-decoration: none;
+            transition: border 0.5s ease-in;
+            &:hover{
+                border: solid 2px red;
+            }
+        }
+    }
+}
