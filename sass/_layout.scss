@@ -1,8 +1,12 @@
 body{
     width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
 }
 
 header{
+    grid-area: 1/1/1/7;
     display: flex;
     align-content: space-between;
 }
@@ -15,9 +19,7 @@ ul{
     padding: 0;
     align-content: space-around;
     li{
-        display: inline-block;
         margin: auto;
-        
         a{
             border: solid 2px blue;
             text-decoration: none;
@@ -32,9 +34,14 @@ ul{
 main{
     width: 100%;
     display: flex;
+    grid-area: 3/1/4/7;
+    align-content: space-between;
+    flex-wrap: nowrap;
     h1{
         display: flex;
         margin: auto;
+        flex-shrink: 0;
+        flex-wrap: nowrap;
         &.sujet1{
             color: crimson;
             animation-name: animation1;
@@ -50,20 +57,23 @@ main{
         }
     }
     div.slide-wrap{
-        padding-top: 25vh;
+        margin: auto;
+        
         div.slider{
-            width: 300px;
+            width: 500px;
             height: 300px;
             display: flex;
             overflow-x: auto;
+            
             -webkit-overflow-scrolling: touch;
             scroll-snap-type: x mandatory;  
             div.slide{
-                width: 300px;
+                width: 500px;
                 flex-shrink: 0;
                 height: 100%;
                 scroll-snap-align: start;
                 scroll-behavior: smooth;
+                flex-wrap: nowrap;
                 background-color: aquamarine;
                 p{
                     margin: auto;
