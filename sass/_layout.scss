@@ -2,7 +2,7 @@ body{
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 50px 50px 50px 50px 50px;
 }
 
 header{
@@ -41,6 +41,8 @@ main{
         display: grid;
         margin: auto;
         flex-shrink: 0;
+        margin-top: 150px;
+        margin-bottom: 150px;
         flex-wrap: nowrap;
         &.sujet1{
             color: crimson;

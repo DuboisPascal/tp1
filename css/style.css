@@ -383,8 +383,8 @@ body {
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  -ms-grid-rows: 1fr 1fr 1fr 1fr 1fr;
-      grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  -ms-grid-rows: 50px 50px 50px 50px 50px;
+      grid-template-rows: 50px 50px 50px 50px 50px;
 }
 
 header {
@@ -446,6 +446,8 @@ main h1 {
   margin: auto;
   -ms-flex-negative: 0;
       flex-shrink: 0;
+  margin-top: 150px;
+  margin-bottom: 150px;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
 }
